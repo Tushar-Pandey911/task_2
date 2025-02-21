@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - DVM Frontend Task 2</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+ <div class="page-wrapper">
+  <div class="images-left">
+   <div class="display-left">
+    <img class="Poster-1" src="Sangam 1.jpg" alt="merch img-1">
+   </div>
+   <div class="display-left">
+    <img class="Poster-2" src="sangam 3.jpg" alt="merch img-2">
+   </div>
+  </div>
+    <div class="form-container"><h2>Sangam Merchandise Signing</h2>
+    <form id="registrationForm" novalidate>
+       <!--  Name Field -->
+         <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" placeholder="5-50 characters"/>
+            <span class="error" id="nameError"></span>
+         </div>
+          <!-- Email Field -->
+  <div class="form-group">
+    <label for="email">Email (BITS Email):</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="f20XXYYYY@pilani.bits-pilani.ac.in"
+    />
+    <span class="error" id="emailError"></span>
+  </div>
+
+  <!-- Phone Number Field -->
+  <div class="form-group">
+    <label for="phone">Phone Number:</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="10-digit mobile number"
+    />
+    <span class="error" id="phoneError"></span>
+  </div>
+
+  <!-- BITS ID Field -->
+  <div class="form-group">
+    <label for="bitsId">BITS ID:</label>
+    <input
+      type="text"
+      id="bitsId"
+      name="bitsId"
+      placeholder="e.g. 2020A7PS0000P"
+    />
+    <span class="error" id="bitsIdError"></span>
+  </div>
+
+  <!-- Hostel Dropdown -->
+  <div class="form-group">
+    <label for="hostel">Bhawan:</label>
+    <select id="hostel" name="hostel">
+      <option value="">Select Bhawan</option>
+      <option value="hostelA">KR Bhawan</option>
+      <option value="hostelB">GN Bhawan</option>
+      <option value="hostelC">RAM Bhawan</option>
+      <option value="hostelD">BUDH Bhawan</option>
+      <option value="hostelE">SR Bhawan</option>
+      <option value="hostelF">CVR Bhawan</option>
+      <option value="hostelG">Malviya Bhawan</option>
+      <option value="hostelH">Shankar Bhawan</option>
+      <option value="hostelI">Vyas Bhawan</option>
+      <option value="hostelJ">VK Bhawan</option>
+      <option value="hostelK">Bhagirath Bhawan</option>
+      <option value="hostelL">Meera Bhawan</option>
+      <option value="hostelM">Ashok Bhawan</option>
+      <option value="hostelN">RP Bhawan</option>
+    </select>
+    <span class="error" id="hostelError"></span>
+  </div>
+  <!-- After Hostel dropdown -->
+<div class="form-images-mobile">
+  <img src="sangam 3.jpg" class="mobile-img" alt="Merch 1">
+  <img src="Sangam 1.jpg" class="mobile-img" alt="Merch 2">
+  <img src="Sangam2.jpg" class="mobile-img" alt="Merch 3">
+</div>
+<div class="form-group checkbox-merch">
+  <label>Select Your Merch:</label>
+  <div class="merch-options">
+    <label>
+      <input type="checkbox" name="merch" value="black"> Hoodie-black ( &#8377;1000)
+    </label>
+    <label>
+      <input type="checkbox" name="merch" value="white"> Hoodie- white(&#8377;920)
+    </label>
+    <label>
+      <input type="checkbox" name="merch" value="T-shirt"> T-Shirt (&#8377;690)
+    </label>
+  </div>
+  <span class="error" id="merchError"></span>
+</div>
+
+
+  <!-- Size Radio Buttons -->
+  <div class="form-group">
+    <label>Choose Size:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="size" value="S" /> S</label>
+      <label><input type="radio" name="size" value="M" /> M</label>
+      <label><input type="radio" name="size" value="L" /> L</label>
+      <label><input type="radio" name="size" value="XL" /> XL</label>
+    </div>
+    <span class="error" id="sizeError"></span>
+  </div>
+
+  <!-- Terms and Conditions Checkbox -->
+  <div class="form-group">
+    <label>
+      <input type="checkbox" id="terms" name="terms" />
+      I agree to the terms and conditions.
+    </label>
+    <span class="error" id="termsError"></span>
+  </div>
+
+  <!-- Form Buttons -->
+  <div class="form-actions">
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </div>
+
+</form>
+</div>
+<div class="images-right">
+  <div class="display-right">
+    <img class="Poster-3" src="Sangam2.jpg" alt="merch img-3">
+  </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
